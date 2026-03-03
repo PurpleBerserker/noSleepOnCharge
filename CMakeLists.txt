@@ -25,6 +25,7 @@ link_directories(
 
 add_executable(nosleeponcharge.elf
   main.c
+  logging/log.c
 )
 
 target_link_libraries(nosleeponcharge.elf
@@ -34,6 +35,7 @@ target_link_libraries(nosleeponcharge.elf
   SceThreadmgrForDriver_stub
   SceIofilemgrForDriver_stub
   SceKernelSuspendForDriver_stub
+  SceLibc_stub
   gcc
 )
 
